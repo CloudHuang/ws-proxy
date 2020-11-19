@@ -1,3 +1,22 @@
+/*-
+ * #%L
+ * Home Automation
+ * %%
+ * Copyright (C) 2016 - 2017 Koen Serneels
+ * %%
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * 
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ * #L%
+ */
 package be.error.wsproxy.interceptors.logging;
 
 import org.apache.commons.lang3.StringUtils;
@@ -49,7 +68,7 @@ public class WebServiceMessageXPathExpressionMetaData {
 	 * result values are expected to be always there, but the fact that if they are not is not severe (we would like to
 	 * know about it, but don't block processing for example) use {@link #MANDATORY}. If a mandatory value is absent and
 	 * we like to block processing because of it, use {@link #MANDATORY_BLOCKING}.
-	 * <p/>
+	 * <p>
 	 * 
 	 * <b>default is {@link #MANDATORY}</b>
 	 */

@@ -1,3 +1,22 @@
+/*-
+ * #%L
+ * Home Automation
+ * %%
+ * Copyright (C) 2016 - 2017 Koen Serneels
+ * %%
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * 
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ * #L%
+ */
 package be.error.wsproxy.configuration.properties;
 
 import org.springframework.beans.factory.annotation.Value;
@@ -11,7 +30,7 @@ import be.error.wsproxy.configuration.profiles.Local;
  * This will normally only be used for accessing external services (external outbound). Internally hosted services are
  * normally directly reachable by this module. However, if for some reason internal services needs to be accessed via a
  * forward proxy you can specify them here as well.
- * <p/>
+ * <p>
  * The target service for which the configuration is used is identified by the payload root element and its namespace.
  * The proxy information is in format host:port. Eg. "{http://service.error.be}localPart=proxyHost:proxyPort". Multiple
  * entries are comma separated.
